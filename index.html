@@ -20,7 +20,7 @@
                     <input type="text" readonly class="form-control-plaintext" id="searchCity" value="Search for a City:">
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control" id="inputCity" placeholder="City">
+                    <input type="search" class="form-control" id="inputCity" placeholder="City">
                 </div>
                 <div class="mb-3">
                     <button id="searchbtn" type="submit" class="btn btn-primary">Search</button>
@@ -34,7 +34,9 @@
         <div class="col-sm-8">
             <div class="row ml-2 border border-dark rounded">
             <div id="current-weather" class="flex-grow-1">
-                <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                <div class="row">
+                    <h2 class="citynamedisplay"> </h2> <img id="wicon" src="" alt="Weather icon">
+                </div>
                 <p>Temperature:<span class="current" id="temperature"></span></p>
                 <p>Wind Speed:<span class="current" id="wind-speed"></span></p>  
                 <p>Humidity:<span class="current" id="humidity"></span></p> 
@@ -57,7 +59,7 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
