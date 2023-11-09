@@ -11,8 +11,17 @@ $(document).ready(function () {
         current_weather();
     });
 
+
+    function capitalizeCityName(name) {
+        return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+    }
+
+    
+
+
     var createRow = function () {
-        var button = $("<button>").text(cityname);
+        var capitalizedCityName = capitalizeCityName(cityname);
+        var button = $("<button>").text(capitalizedCityName);
         button.addClass("locationname list-group-item list-group-item-action");
         button.attr("type", "button");
         $(".list-group").prepend(button);
@@ -22,8 +31,8 @@ $(document).ready(function () {
      $(".list-group").on("click", ".list-group-item", function (event) {
         if (event.target.matches(".list-group-item")){
             cityname=event.target.textContent.trim();
+        $(".display").empty();    
         current_weather();
-    
         }
     });
 
