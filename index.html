@@ -26,26 +26,24 @@
                     <button id="searchbtn" type="submit" class="btn btn-primary">Search</button>
                 </div>
                 <hr /> 
-                <div id="city-container">
-                    <ul class="list-group"></ul>
-                </div>
+                <ul class="list-group"></ul>    
             </div>
  
         <div class="col-sm-8">
             <div class="row ml-2 border border-dark rounded">
-            <div id="current-weather" class="flex-grow-1">
-                <div class="row">
+                <div id="current-weather" class="flex-grow-1">               
                     <h2 class="citynamedisplay"> </h2> <img id="wicon" src="" alt="Weather icon">
+                    <p>Temp: <span class="current" id="temperature"></span></p>
+                    <p>Wind Speed: <span class="current" id="wind-speed"></span></p>  
+                    <p>Humidity: <span class="current" id="humidity"></span></p> 
                 </div>
-                <p>Temperature:<span class="current" id="temperature"></span></p>
-                <p>Wind Speed:<span class="current" id="wind-speed"></span></p>  
-                <p>Humidity:<span class="current" id="humidity"></span></p> 
             </div>
-        </div>
-
-        <div class="row fiveday">
+            
+            
+            <div class="row fiveday">
             <h2> 5-Day Forecast: </h2>
             <div class="row display">
+            </div>
             </div>
         </div>
 

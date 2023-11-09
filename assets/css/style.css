@@ -11,3 +11,20 @@ header {
 main {
     padding-top: 70px;
 }
+
+.forecast {
+    background-color: rgb(7, 35, 77);
+    margin-left: 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.locationname {
+    background-color: lightgrey;
+
+}
+
+#searchCity {
+    font-size: 20px;
+    font-weight: bold;
+}
